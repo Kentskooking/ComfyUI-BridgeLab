@@ -92,6 +92,6 @@ Behavior:
 
 - The selected checkpoint does not expose both SDXL CLIP-L and CLIP-G token embedding tables.
 - The source embedding is already SDXL or is not a standard SD 1.5 textual inversion embedding.
-- Validation is enabled but the CLIP Interrogator phrase files are not present.
+- Validation is enabled but the bundled CLIP Interrogator phrase files are missing.
 - The output file already exists and `overwrite` is disabled.
 - The hypernetwork payload uses unsupported features such as non-linear activation, layer norm, or dropout.

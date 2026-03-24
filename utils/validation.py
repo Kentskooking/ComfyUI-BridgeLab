@@ -208,8 +208,14 @@ def load_clip_interrogator_phrases() -> list[str]:
 
 
 def clip_interrogator_data_path() -> str:
+    repo_root = os.path.dirname(os.path.dirname(__file__))
+    bundled_path = os.path.join(repo_root, "data", "clip_interrogator")
+    if os.path.isdir(bundled_path):
+        return bundled_path
+
     custom_nodes_root = folder_paths.get_folder_paths("custom_nodes")[0]
-    return os.path.join(custom_nodes_root, "eden_comfy_pipelines", "clip_utils", "data")
+    fallback_path = os.path.join(custom_nodes_root, "eden_comfy_pipelines", "clip_utils", "data")
+    return fallback_path
 
 
 def load_phrase_file(path: str) -> list[str]:

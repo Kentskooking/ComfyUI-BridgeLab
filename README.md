@@ -27,5 +27,10 @@ This nodepack converts SD 1.5 embeddings and hypernetworks into usable SDXL vers
 ## Notes
 
 - Alignment fitting is cached per SDXL checkpoint.
-- Optional phrase validation expects CLIP Interrogator phrase files from `eden_comfy_pipelines/clip_utils/data`.
+- Optional phrase validation uses bundled CLIP Interrogator phrase files from `data/clip_interrogator`.
+- Bundled phrase files are attributed in `data/clip_interrogator/ATTRIBUTION.md`.
 - Hypernetwork conversion is experimental and only supports classic linear payloads.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

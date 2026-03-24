@@ -56,9 +56,13 @@ The validation report exposes:
 
 Phrase sampling comes from text files in:
 
+`data/clip_interrogator`
+
+The repo bundles the phrase files it needs for validation. For compatibility with older installs, the loader still falls back to:
+
 `custom_nodes/eden_comfy_pipelines/clip_utils/data`
 
-That dependency is external to this repo. If the phrase files are missing, validation will fail when enabled.
+If neither location is present, validation will fail when enabled.
 
 ## Batch Conversion
 
@@ -107,5 +111,5 @@ Converted embeddings include metadata such as:
 
 - Source textual inversion embeddings must be SD 1.5 style CLIP-L embeddings with width `768`.
 - Existing SDXL embeddings are rejected rather than modified.
-- Validation depends on another custom node's phrase data.
+- Validation depends on the bundled phrase files being present in this repo.
 - Hypernetwork support is narrow and should be treated as a best-effort conversion path, not a guaranteed faithful transfer.

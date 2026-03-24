@@ -28,7 +28,7 @@ Documentation = "https://github.com/Kentskooking/ComfyUI-BridgeLab/wiki"
 "Bug Tracker" = "https://github.com/Kentskooking/ComfyUI-BridgeLab/issues"
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "kentskooking"
 DisplayName = "ComfyUI-BridgeLab"
 Icon = ""
 includes = [] 
