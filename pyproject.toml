@@ -1,6 +1,6 @@
 [project]
 name = "bridgelab"
-description = ""
+description = "converts SD 1.5 embeddings and hypernetworks into usable SDXL versions"
 version = "1.0.0"
 license = {file = "LICENSE"} 
 # classifiers = [
