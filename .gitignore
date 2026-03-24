@@ -1,0 +1,17 @@
+Capture.PNG
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*.pyc.*
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local generated artifacts for this nodepack
+cache/
+batch_input_test/
+batch_output_test/
+_tmp_test_output.safetensors
