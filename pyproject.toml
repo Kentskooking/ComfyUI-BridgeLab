@@ -1,7 +1,7 @@
 [project]
 name = "bridgelab"
 description = "converts SD 1.5 embeddings and hypernetworks into usable SDXL versions"
-version = "1.0.0"
+version = "1.0.1"
 license = {file = "LICENSE"} 
 # classifiers = [
 #     # For OS-independent nodes (works on all operating systems)

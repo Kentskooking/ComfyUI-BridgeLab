@@ -1,0 +1,205 @@
+{
+  "id": "84688844-024e-4fd6-a727-3b1ce27034fd",
+  "revision": 0,
+  "last_node_id": 4,
+  "last_link_id": 0,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "SD15ToSDXLEmbeddingConverter",
+      "pos": [
+        1621.0758371784868,
+        4636.585797002741
+      ],
+      "size": [
+        345.3090881347656,
+        302
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "embedding_name",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "embedding_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "fit_token_cosine",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "validation_hidden_cosine",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "validation_pooled_cosine",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "report",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Kentskooking/ComfyUI-BridgeLab",
+        "ver": "579c046c47ae540361d7cfe3fb57247ea99044b6",
+        "Node name for S&R": "SD15ToSDXLEmbeddingConverter"
+      },
+      "widgets_values": [
+        "12TBackYard.pt",
+        "Realistic_Vision_V5.1-inpainting.safetensors",
+        "",
+        false,
+        true,
+        128,
+        32
+      ]
+    },
+    {
+      "id": 3,
+      "type": "SD15ToSDXLHypernetworkConverter",
+      "pos": [
+        1611.5760017582595,
+        5038.790815660745
+      ],
+      "size": [
+        365.0136474609375,
+        146
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "hypernetwork_name",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "hypernetwork_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "report",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Kentskooking/ComfyUI-BridgeLab",
+        "ver": "579c046c47ae540361d7cfe3fb57247ea99044b6",
+        "Node name for S&R": "SD15ToSDXLHypernetworkConverter"
+      },
+      "widgets_values": [
+        "CasioWatchCamera-50000.pt",
+        "CasioWatchCamera-SDXL",
+        false
+      ]
+    },
+    {
+      "id": 2,
+      "type": "SD15FolderToSDXLEmbeddingBatchConverter",
+      "pos": [
+        2041.5735725580769,
+        4636.985757311249
+      ],
+      "size": [
+        432.3090881347656,
+        366
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output_directory",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "converted_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "skipped_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "failed_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "fit_token_cosine",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "validation_hidden_cosine",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "validation_pooled_cosine",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "report",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Kentskooking/ComfyUI-BridgeLab",
+        "ver": "579c046c47ae540361d7cfe3fb57247ea99044b6",
+        "Node name for S&R": "SD15FolderToSDXLEmbeddingBatchConverter"
+      },
+      "widgets_values": [
+        "C:\\ComfyUI\\models\\embeddings",
+        "Realistic_Vision_V5.1-inpainting.safetensors",
+        "_sdxl",
+        false,
+        false,
+        true,
+        128,
+        32
+      ]
+    }
+  ],
+  "links": [],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "workflowRendererVersion": "LG",
+    "ds": {
+      "scale": 1.116781577942515,
+      "offset": [
+        -641.456752208177,
+        -4365.278750998686
+      ]
+    },
+    "frontendVersion": "1.38.14",
+    "VHS_latentpreview": true,
+    "VHS_latentpreviewrate": 12,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
